@@ -1,0 +1,145 @@
+.meerkat-info-widget {
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    background: transparent;
+    clear: both;
+    position: relative;
+}
+
+.meerkat-info-widget * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.meerkat-info-widget .title {
+    background: none repeat scroll 0 0 #446181;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 11px 10px;
+}
+
+.meerkat-info-widget ul,
+.meerkat-info-widget li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.meerkat-info-widget ul {
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.meerkat-info-widget ul > li:last-of-type {
+    border-bottom: none;
+}
+
+.meerkat-info-widget ul ul,
+.meerkat-info-widget ul ul li {
+    overflow: visible;
+    border: none;
+}
+
+.meerkat-info-widget ul ul li {
+    margin-bottom: .5em !important;
+    padding-left: .2em !important;
+}
+
+#content .meerkat-info-widget ul ul li:before {
+    content: "\2022";
+}
+
+.meerkat-info-widget .vertical li {
+    position: static !important;
+}
+
+.meerkat-info-widget .vertical {
+    position: relative;
+}
+
+.meerkat-info-widget .trigger {
+    border: 1px solid #D8E3EA;
+    border-width: 1px 1px 0 1px;
+    color: #446181;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding: 10px 40px 10px 10px;
+    position: relative;
+    background: #EEF8FD;
+    cursor: pointer;
+    transition: background-color .1s, color .1s;
+}
+
+.meerkat-info-widget ul > li:last-of-type .trigger {
+    border-bottom: 1px solid #D8E3EA;
+}
+
+.meerkat-info-widget .vertical .trigger {
+    width: 50%;
+}
+
+.meerkat-info-widget .trigger:hover,
+.meerkat-info-widget .trigger.active {
+    background: #3586AA !important;
+    color: #FFF;
+}
+
+/* Arrow */
+.meerkat-info-widget .trigger:after {
+    width: 32px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ddedf5;
+    border-left: 1px solid #D8E3EA;
+    content: "\f139";
+    font-family: dashicons;
+    font-size: 27px;
+    text-align: center;
+    display: block;
+    line-height: 36px;
+    color: #27ACD3;
+    font-weight: normal;
+    padding-right: 4px;
+}
+
+.meerkat-info-widget .trigger.active:after,
+.meerkat-info-widget .trigger:hover:after {
+    content: "\f140";
+    line-height: 34px;
+}
+
+.meerkat-info-widget .trigger.active:after {
+    border-bottom: 1px solid #D8E3EA;
+}
+
+.meerkat-info-widget .target {
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0;
+    padding: 12px;
+    background: #fff;
+    overflow: auto;
+    z-index: 1;
+}
+
+.meerkat-info-widget .vertical .target {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.meerkat-info-widget .content p {
+    margin-bottom: 10px;
+}
